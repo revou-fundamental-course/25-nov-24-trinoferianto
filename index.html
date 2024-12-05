@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RevoU - Kalkulator BMI</title>
+    <link href="style/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- title -->
+        <h1>Kalkulator BMI</h1>
+    </header>
+
+    <!-- Main section -->
+    <main style="display: flex;justify-content: center;">
+        <!-- Calculation form section - Left side -->
+        <section id="section-form">
+
+            <!-- First article section -->
+            <article>
+                <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? </p>
+                <p>Yuk, hitung sekarang di Kalkulator BMI.</p>
+            </article>
+        
+            <!-- Input form section -->
+            <form id="form-kalkulator-bmi">
+                <div>
+                    <label>Jenis Kelamin</label>
+                    <div class="form-radio-btn">
+                        <input type="radio" id="btn-man" value="man" name="gender" checked>Pria</input>
+                        <input type="radio" id="btn-woman" value="woman" name="gender" style="margin-left: 24px;">Wanita</input>
+                    </div> 
+                </div>
+                <div>
+                    <label>Berat Badan (kg)</label>
+                    <input type="number" id="input-body-weight" required />
+                </div>
+                <div>
+                    <label>Usia (tahun)</label>
+                    <input type="number" id="input-age" required />
+                </div>
+                <div>
+                    <label>Tinggi Badan (cm)</label>
+                    <input type="number" id="input-body-height" required />
+                </div>
+                <div class="form-btn">
+                    <button id="btn-calculate" type="button" onclick="CalculateBMI()">Hitung BMI</button>
+                    <button id="btn-reset" type="button" onclick="ResetBMI()">Reset</button>
+                </div>
+            </form>
+
+            <!-- Second article section -->
+            <article>
+                <h3>Keunggulan fitur</h3>
+                <ol>
+                    <li>Menghitung berat badan</li>
+                    <li>Menetukan kategori berat badan ideal atau tidak</li>
+                    <li>Mempersiapkan program penurunan berat badan</li>
+                </ol>
+                <p>
+                    Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+                </p>
+            </article>
+        </section>
+
+        <!-- Result section - Right side -->
+        <section id="section-result" >
+            <h3>Hasil</h3>
+
+            <!-- calculation nresult -->
+            <div id="bmi-calculation-section">
+                <p id="calculation-status"></p> <!-- A container for dynamic title of BMI result, updated by script when form buttons clicked -->
+                <p id="calculation-result"></p> <!-- A container for dynamic BMI calculation result, updated by script when form buttons clicked -->
+                <p id="calculation-conclusion"></p> <!-- A container for dynamic category o BMI result, updated by script when form buttons clicked -->
+                <button id="download-result">Download Hasil BMI</button>
+            </div>
+
+            <h3>Keterangan</h3>
+
+            <!-- First article section -->
+            <article id="calculation-information">
+                <p></p> <!-- A container for dynamic added information, updated by script when form buttons clicked -->
+            </article>
+
+            <!-- Second article section -->
+            <article>
+                <p>Apabila Anda membutuhkan bantuan dalam penghitungan kebutuhan kalori, pola diet, ataupun jenis makanan yang sesuai dengan kebutuhan tubuh Anda, Anda dapat memanfaatkan konsultasi gratis dengan ahli kami secara mudah dengan menekan tombol di bawah.</p>
+            </article>
+
+            <!-- external button link -->
+            <div id="external-app-container">
+                <button>Konsultasi Ahli Gizi Via Aplikasi</button>
+                <button>Registrasi Online Ahli Gizi</button>
+            </div>
+        </section>
+    </main>     
+
+    <!-- Footer section -->
+    <footer>
+        <p>@2024 RevoU - SEFC</p>
+    </footer>
+
+    <!-- Include javascript -->
+    <script src="css/scripts.js"></script>
+   
+</body>
+</html>

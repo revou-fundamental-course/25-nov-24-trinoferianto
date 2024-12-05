@@ -1,0 +1,128 @@
+/* CSS style for 'tag' */
+body {
+    margin: 1%;
+    width: 98%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+}
+
+section {
+    width: 48%;
+    margin: 1%;
+}
+
+article {
+    width: 100%;
+    text-align: justify;
+}
+
+form {
+    width:auto;
+    background-color: rgb(236, 236, 236);
+    border-radius: 8px;
+    padding: 1px 12px;
+}
+
+form div {
+    margin: 18px 0px 18px 0px;
+    display:grid;
+}
+
+form div input {
+    height: 24px;
+    margin-top: 4px;
+    border-radius: 8px;
+    border-color: lightgray;
+}
+
+ol {
+    padding: 0px 16px;
+}
+
+h3 {
+    margin-top: 12px;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* CSS style for 'class' */
+.form-radio-btn {
+    display: flex;
+    margin: 0px;
+}
+
+.form-btn {
+    display: flex;
+}
+
+.form-btn button {
+    width: 120px;
+    height: 36px;
+    border-radius: 6px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    margin-right: 14px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CSS style for 'id' */
+#btn-calculate {
+    background-color: rgb(119, 199, 245);
+}
+
+#btn-reset {
+    background-color: red;
+}
+
+#section-result {
+    display: none;
+}
+
+#bmi-calculation-section {
+    background-color: rgb(236, 236, 236);
+    padding-top: 4px;
+    padding-bottom: 24px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#bmi-calculation-section button{
+    width: 180px;
+    height: 36px;
+    border-radius: 6px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    background-color: rgb(119, 199, 245);
+}
+
+#calculation-result {
+    font-weight: bold;
+    color: red;
+    font-size: 72px;
+    margin: 0px;
+}
+
+#external-app-container{
+    display: flex;
+    justify-content: center;
+}
+
+#external-app-container button{
+    width: 240px;
+    height: 36px;
+    margin: 24px;
+    border-radius: 6px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    background-color: rgb(119, 199, 245);
+}
